@@ -1,0 +1,525 @@
+/* variables declared here - these are the colors for our pages, as well as the font stacks and sizes. */
+:root {
+    --black: #171321;
+    --dkblue: #0d314b;
+    --plum: #4b0d49;
+    --hotmag: #ff17e4;
+    --magenta: #e310cb;
+    --aqua: #86fbfb;
+    --white: #f7f8fa;
+    --font-size: 1.3rem;
+    --mono: "Oxygen mono", monospace;
+    --sans: Oxygen, sans-serif;
+}
+/* border box model */
+html {
+    box-sizing: border-box;
+    
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+  font-family: var(--sans);
+  margin: 0;
+  background-color: var(--black);
+  color: var(--white);
+  /* font-size: var(--font-size); */
+}
+
+nav{
+ font-family: var(--mono);
+ font-size: 80%;
+ padding: 1rem;
+ /* position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%; */
+}
+
+.fa-code, .fa-cloud{
+  color: var(--aqua);
+}
+
+nav h1 a{
+  font-family: var(--sans);
+  background: linear-gradient(90deg, rgba(255,23,228,1) 0%, rgba(134,251,251,1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+
+nav ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+nav a{
+  text-decoration: none;
+  color: var(--white);
+  display: block;
+}
+
+nav a:hover{
+  color: var(--magenta);
+}
+
+nav li:first-child{
+  flex-basis:100%;
+  text-align: center;
+}
+a{
+  color: var(--magenta);
+}
+
+a:hover{
+  text-decoration: none;
+  color: var(--hotmag);
+}
+
+.button {
+  background-color: var(--magenta);
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.button:hover{
+  color: var(--white);
+  background-color: var(--hotmag);
+}
+#section1{
+  padding: 4rem 1rem 10rem 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#section1 .name{
+  font-family: var(--mono);
+}
+
+/* .about-me{
+  padding: 4rem 1rem 10rem 1rem;
+} */
+
+.name span{
+  font-size: 3rem;
+  font-family: var(--sans);
+  color: var(--aqua);
+  display: block;
+}
+
+#section1 h2{
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+/* projects section */
+#section2{
+  padding: 2rem 1rem;
+  background-color: var(--dkblue);
+  padding: 0 auto;
+  margin-top: 0;
+}
+
+#section2 h2{
+  font-size: 1.5rem;
+  margin-bottom: calc(2.5rem * 1.5);
+}
+
+#section2 h3{
+  color: var(--aqua);
+  margin: 0;
+}
+
+#section2 h4{
+  font-family: var(--mono);
+  font-size: 1rem;
+  margin: 0;
+}
+
+.description {
+  background-color: var(--black);
+  padding: 1rem;
+  border-radius: 10px;
+  color: var(--white);
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+#section2 ul{
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  font-size: 1rem;
+}
+
+.proj-img{
+  border-left: 1px solid var(--aqua);
+  border-top: 1px solid var(--aqua);
+  border-radius: 25px;
+  padding: 1rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+/* skills section */
+#section3{
+  padding: 4rem 1rem 10rem 1rem;
+}
+.skills-container {
+  width: 50%;
+  background: #ddd;
+  border: 1px solid black; 
+  border-radius: 20px;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: black;
+}
+
+.html {
+  width: 95%;
+}
+.aws {
+  width: 95%;
+}
+.css {
+  width: 70%;
+}
+.js {
+  width: 30%;
+} 
+
+.html, .aws, .css, .js{
+background-color: rgb(255,23,228);
+background: linear-gradient(90deg, rgba(255,23,228,1) 0%, rgba(134,251,251,1) 100%);
+}
+
+/* Awards & Certificate */
+#section4{
+background-color: var(--dkblue);
+padding: 0 auto;
+margin-top: 0;
+padding: 2rem 1rem;
+}
+
+.text1 .fa-medal{
+  color: var(--aqua);
+}
+
+/* Contact Me  */
+#section5 {
+  padding: 4rem 1rem 10rem 1rem;
+  background: var(--black);
+  display: inline-block;
+  width: 100%;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 5px 0 5px 0;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:hover{
+  color: var(--hotmag);
+}
+
+.fa-linkedin, .fa-github, .fa-twitter, .fa-facebook{
+  font-size: 150%;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.gradient{
+  background: rgb(255,23,228);
+background: linear-gradient(90deg, rgba(255,23,228,1) 0%, rgba(134,251,251,1) 100%);
+height: 2px;
+}
+footer{
+  text-align: center;
+  padding: top 0.3rem; 
+  margin-top: 0;
+}
+
+@media(min-width:550px){
+  article{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); 
+    gap: 1rem;
+  }
+  .proj-img{
+    grid-column: 1/6;
+    grid-row: 1/2;
+    margin-bottom: 5rem;
+  }
+  .text{
+    grid-column: 5/11;
+    grid-row: 1/2;
+    order: 2;
+    text-align: right;
+  }
+
+  .text1{
+    grid-column: 5/11;
+    grid-row: 1/2;
+    order: 2;
+    text-align: right;
+    padding-top: 4rem;
+  }
+#section2 ul{
+  justify-content: flex-end;
+}
+#section2 .reverse .text{
+  grid-column: 1/7;
+  order: 2;
+  text-align: left;
+  grid-row: 1/2;
+}
+#section2 .reverse .proj-img{
+  grid-column: 6/11;
+  grid-row: 1/2;
+  margin-bottom: 5rem;
+}
+#section2 .reverse ul{
+  justify-content: flex-start;
+}
+}
+
+/* media query */
+@media(min-width:850px){
+  nav{
+    max-width: 1200px;
+    margin: 0 auto; 
+  }
+  nav li:first-child{
+    flex-basis: auto;
+    text-align: left;
+    margin-right: auto;
+  }
+  .projects{
+    max-width: 1200px;
+  margin: 0 auto;
+  }
+  .skills-sec{
+    max-width: 1200px;
+  margin: 0 auto;
+}
+  .awards-sec{
+    max-width: 1200px;
+  margin: 0 auto;
+  }
+}
+
+/* nav {
+  height: 130px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #1a1f33;
+}
+
+nav h1 span {
+  color: #627fa9;
+}
+
+nav h1 {
+  justify-content: center;
+  display: flex;
+  font-size: 30px;
+  font-weight: bolder;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+   margin: 0;
+  padding: 0; 
+  flex-flow: row wrap;
+}
+
+nav li {
+  flex-basis: 15%;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  border-bottom: 8px solid #627fa9;
+  padding-bottom: 43px;
+  text-transform: uppercase;
+  flex-basis: 10%;
+}
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+.progress-bar {
+  background: #04aa6d;
+  height: 8px;
+  width: 0%;
+}
+
+/* Home Section 
+#section1 {
+  padding-top: 140px;
+  height: 635px;
+  background: #a6abb3;
+  display: inline-block;
+  width: 100%;
+  /* opacity: 0.6; 
+}
+.parallax {
+  /* The image used */
+  /* background-image: url(/images/devgirl.jpg );
+  background-size: auto; */
+
+  /* Set a specific height 
+  min-height: 500px;*/
+  
+
+  /* Create the parallax scrolling effect 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#section2 {
+  padding-top: 140px;
+  height: 700px;
+  background: #151f2c;
+  display: inline-block;
+  width: 100%;
+}
+
+#section3 {
+  padding-top: 140px;
+  height: 700px;
+  background: #a6abb3;
+  display: inline-block;
+  width: 100%;
+}
+
+#section4 {
+  padding-top: 140px;
+  height: 700px;
+  background: #151f2c;
+  display: inline-block;
+  width: 100%;
+}
+
+#section5 {
+  padding-top: 140px;
+  height: 700px;
+  background: #a6abb3;
+  display: inline-block;
+  width: 100%;
+}
+
+/* Contact Me 
+#section6 {
+  /* padding-top: 140px; 
+  height: 700px;
+  background: #151f2c;
+  display: inline-block;
+  width: 100%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 5px 0 5px 0;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.skills-container {
+  width: 50%;
+  background: #ddd;
+  /* border: 1px solid black; 
+  border-radius: 20px;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.html {
+  width: 95%;
+  background-color: #04aa6d;
+}
+.aws {
+  width: 95%;
+  background-color: #6d0742;
+}
+.css {
+  width: 70%;
+  background-color: #7faef1;
+}
+.js {
+  width: 30%;
+  background-color: #a6abb3;
+} 
