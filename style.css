@@ -294,19 +294,6 @@ height: 2px;
 }
 
 @media (max-width: 549px){
-    /* .contact{
-    width: 100vw;
-  }
-  .contact-text{
-    grid-column: 1/6;
-    grid-row: 1/2;
-    margin-bottom: 5rem;
-  }
-  .contact-form{
-  text-align: center;
-  justify-content: center;
-  margin: 0 ;
-  } */
   .contact{
     grid-template-columns: 1fr;
     width: 90%;
