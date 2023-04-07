@@ -13,3 +13,21 @@
 // }
 
 
+
+const links = document.querySelectorAll('a[href^="#"]');
+links.forEach((link) => {
+    link.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        const href = this.getAttribute("href").substring(1);
+        const offsetTop = document.getElementById(href).offsetTop;
+
+        scroll({
+            top: offsetTop,
+            behavior: "smooth",
+        });
+    });
+});
+
+
+
