@@ -295,14 +295,25 @@
           action="https://formspree.io/f/xgeblprg"
           method="POST"
         >
-          <input type="text" name="name" placeholder="Full Name" required/>
-          <input type="email" name="email" placeholder="Your Email" required />
-          <input type="text" name="subject" placeholder="Subject" required />
-          <label for=""
-            ><h5>Let me know more about your project</h5>
+          <div class="form-control">
+            <input type="text" name="name" required/>
+            <label for="Full Name">Full Name</label>
+          </div>
+
+          <div class="form-control">
+            <input type="email" name="email" required />
+            <label for="Email">Your Email</label>
+          </div>
+
+          <div class="form-control">
+            <input type="text" name="subject" required />
+            <label for="Subject">Subject</label>
+          </div>
+          <label for=""></label>
+          <h5>Let me know more about your project</h5>
             <textarea name="info" id="" cols="30" rows="5" required></textarea>
-          </label>
-          <button>Submit</button>
+            
+          <button class="btn">Submit</button>
         </form>
       </div>
     </div>
