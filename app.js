@@ -15,8 +15,6 @@
 
 
 const links = document.querySelectorAll('a[href^="#"]');
-
-console.log("links", links);
 links.forEach((link) => {
     link.addEventListener("click", function (e) {
         e.preventDefault();
