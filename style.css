@@ -318,6 +318,7 @@ textarea:focus {
   font-size: 18px;
   color: #fff;
   padding: 15px 0;
+  background: transparent;
 }
 
 .form-control input:focus,
@@ -336,17 +337,36 @@ textarea:focus {
 .form-control input:valid + label {
   color: var(--aqua);
   transform: translateY(-25px);
+  transition: 0.3s;
 }
 .form-control input[type="email"]:focus + label,
 .form-control input[type="email"]:valid + label {
   color: var(--aqua);
   transform: translateY(-25px);
   top: 25px;
+  transition: 0.3s;
 }
 
-/* .form-control input[type="email"]::-moz-selection{
+.form-control input[type="email"]::-moz-selection {
   background-color: transparent;
-} */
+}
+
+textarea {
+  border: 0;
+  display: block;
+  color: #fff;
+  padding: 15px 0;
+  background: transparent;
+}
+
+textarea:focus {
+  border: 1px solid #fff;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
 
 /* .form-control label span{
   font-size: 18px;
